@@ -83,7 +83,9 @@
 </script>
 
 <script>
-    document.querySelector('video').playbackRate = 0.5;
+    if (document.querySelector('video')) {
+        document.querySelector('video').playbackRate = 0.5;
+    }
 </script>
 
 </body>
