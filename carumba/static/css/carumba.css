@@ -1,0 +1,42 @@
+
+.bg-green {
+    background-color: #186226ff;
+}
+.green {
+    color: #186226ff;
+}
+.bg-yellow {
+    background-color: #eddc01ff;
+}
+.yellow {
+    color: #eddc01ff;
+}
+
+body {
+    background-color: #efceb0;
+}
+
+.menu-bg {
+    height: 100px;
+    background-color: #222;
+    margin-top: -90px
+}
+
+.carumba-logo {
+    width: 70px;
+    height: 70px;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+.carumba-logo:hover {
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+}
+
+.bg-video {
+    position: absolute;
+    height: 150%
+}
+
