@@ -5,7 +5,23 @@
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
-    <div class="menu-bg"></div>
-    {{ page.body|richtext }}
+<div class="header wf-section">
+    <div class="header-content">
+        <h2 class="h2">B &middot; A &middot; N &middot; D &middot; A</h2>
+        <h1 class="h1">¡CARUMBA!</h1>
+    </div>
+</div>
+<div class="features wf-section">
+    <div class="container cc-center">
+        <div class="h2-container cc-center">
+            <h2 class="h2 cc-center">
+                {{ page.title }}
+            </h2>
+            <p class="paragraph">
+                {{ page.body|richtext }}
+            </p>
+        </div>
+    </div>
+</div>
 {% endblock %}
 

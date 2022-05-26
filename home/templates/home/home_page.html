@@ -14,44 +14,17 @@
         <h1 class="h1">¡CARUMBA!</h1>
     </div>
 </div>
-{{ page.body|richtext }}
-
 <div class="features wf-section">
-    <div class="container">
-        <div class="collection-list-wrapper w-dyn-list">
-            <div role="list" class="collection-list w-dyn-items">
-                <div role="listitem" class="collection-item w-dyn-item">
-                    <div class="feature-item-container">
-                        <div class="feature-icon"><img
-                                src="./Business template - Webflow HTML website template_files/5b681bfb5b239d8246368808_icon-feature-01.svg"
-                                alt=""></div>
-                        <h3 class="h3">Pro ad constituto</h3>
-                        <p class="paragraph cc-gray">
-                            Ne usu illud albucius abhor reant, partiendo scriptorem mel ne.</p>
-                    </div>
-                </div>
-                <div role="listitem" class="collection-item w-dyn-item">
-                    <div class="feature-item-container">
-                        <div class="feature-icon"><img
-                                src="./Business template - Webflow HTML website template_files/5b681c235fc94c975348ed36_icon-feature-02.svg"
-                                alt=""></div>
-                        <h3 class="h3">Eam commodo</h3>
-                        <p class="paragraph cc-gray">Fuisset intellegat delicatissimi ex mea. Cu probo integre nec.</p>
-                    </div>
-                </div>
-                <div role="listitem" class="collection-item w-dyn-item">
-                    <div class="feature-item-container">
-                        <div class="feature-icon"><img
-                                src="./Business template - Webflow HTML website template_files/5b681c455b239d0903368830_icon-feature-03.svg"
-                                alt=""></div>
-                        <h3 class="h3">Reformidans eis</h3>
-                        <p class="paragraph cc-gray">Facer nostro causae ei sed. Vix ex quidam detraxit, vis ad nostro
-                            laoreet.</p></div>
-                </div>
-            </div>
+    <div class="container cc-center">
+        <div class="h2-container cc-center">
+            <h2 class="h2 cc-center">
+                {{ page.title }}
+            </h2>
+            <p class="paragraph">
+                {{ page.body|richtext }}
+            </p>
         </div>
     </div>
 </div>
-
 {% endblock %}
 
