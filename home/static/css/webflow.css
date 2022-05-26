@@ -162,7 +162,7 @@ figcaption {
   position: relative;
   overflow: hidden;
   margin-top: -90px;
-  padding: 210px 30px 120px;
+  padding: 220px 30px 80px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -172,8 +172,8 @@ figcaption {
   -ms-flex-align: center;
   align-items: center;
   background-image: url("/static/images/carumba-bw.jpeg");
-  background-position: 50% 50%;
-  background-size: auto 170%;
+  background-position: 50% 15%;
+  background-size: auto 180%;
   background-repeat: no-repeat;
   background-color: #222;
 }
@@ -1940,8 +1940,7 @@ figcaption {
     padding-right: 10px;
   }
   .header {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding: 80px 30px 80px;
   }
   .bullet {
     display: none;
@@ -2150,16 +2149,14 @@ figcaption {
 
 @media (max-width: 767px) {
   .header {
-    height: 600px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 80px 30px 80px;
   }
   .navigation-links {
     display: none;
   }
   .h1 {
-    font-size: 48px;
-    line-height: 54px;
+    font-size: 60px;
+    line-height: 60px;
   }
   .h1.cc-black {
     margin-bottom: 50px;
@@ -2371,19 +2368,19 @@ figcaption {
   .navigation-container {
     height: 60px;
   }
-  .header {
+  .header-video {
     height: 100vh;
     margin-top: -60px;
     padding-top: 120px;
     padding-bottom: 60px;
   }
   .h1 {
-    font-size: 30px;
-    line-height: 42px;
+    font-size: 60px;
+    line-height: 60px;
   }
   .h2 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 50px;
   }
   .slider-section {
     margin-top: 75px;

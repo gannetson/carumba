@@ -29,6 +29,14 @@ body {
     -ms-transition: -ms-transform .8s ease-in-out;
     transition: transform .8s ease-in-out;
 }
+
+@media (max-width: 479px) {
+    .carumba-logo {
+        width: 32px;
+        height: 32px;
+    }
+}
+
 .carumba-logo:hover {
     transform:rotate(360deg);
     -ms-transform:rotate(360deg);
