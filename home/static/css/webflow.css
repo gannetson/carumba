@@ -239,6 +239,18 @@ figcaption {
   text-align: center;
 }
 
+h2, h3 {
+  font-family: 'Bungee Inline', sans-serif;
+  color: #231f20;
+}
+
+h3 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 32px;
+}
+
 .h1 {
   margin-top: 0px;
   margin-bottom: 30px;
