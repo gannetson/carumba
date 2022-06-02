@@ -48,3 +48,15 @@ body {
     height: 150%
 }
 
+a:active, a:hover {
+    background: #ffffff55;
+}
+
+a {
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 4px 8px;
+    transition-duration: 0.5s;
+    text-decoration: none;
+    color: darkred;
+}
