@@ -2505,4 +2505,11 @@ h2 {
   .contact-intro {
     padding-bottom: 80px;
   }
+
+}
+
+body {
+    background-color: #ffeedd;
+    color: #552222;
+    font-size: 18px;
 }
