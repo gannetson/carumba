@@ -1,4 +1,5 @@
 from wagtail.admin.edit_handlers import FieldPanel
+from wagtail.api import APIField
 from wagtail.core.fields import StreamField, RichTextField
 from wagtail.core import blocks
 from wagtail.core.models import Page
@@ -11,11 +12,20 @@ class HomePage(Page):
         FieldPanel('body', classname="full"),
     ]
 
+    api_fields = [
+        APIField('body'),
+    ]
+
+
 class DefaultPage(Page):
     body = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [
         FieldPanel('body', classname="full"),
+    ]
+
+    api_fields = [
+        APIField('body'),
     ]
 
 
@@ -41,4 +51,8 @@ class GigsPage(Page):
     ])
     content_panels = Page.content_panels + [
         FieldPanel('body', classname="full"),
+    ]
+
+    api_fields = [
+        APIField('body'),
     ]

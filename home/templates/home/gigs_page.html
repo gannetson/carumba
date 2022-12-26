@@ -5,33 +5,53 @@
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
-<div class="header wf-section">
-    <div class="header-content">
-        <h2 class="h2">B &middot; A &middot; N &middot; D &middot; A</h2>
-        <h1 class="h1">¡CARUMBA!</h1>
-    </div>
-</div>
-<div class="features wf-section">
-    <div class="container cc-center">
-        <div class="h2-container cc-center">
-            <h2 class="h2 cc-center">
-                {{ page.title }}
-            </h2>
-            <p class="paragraph">
-                {% for block in page.body %}
-                    {% if block.block_type == 'gig' %}
-                        <div class="gig">
-                            <h2>{{ block.value.date }}</h2>
-                            <h3>{{ block.value.title }}</h3>
-
-                        </div>
-                    {% else %}
-                        <section>{% include_block block %}</section>
-                    {% endif %}
-                {% endfor %}
-            </p>
+    <div class="header wf-section">
+        <div class="header-content">
+            <h2 class="h2">B &middot; A &middot; N &middot; D &middot; A</h2>
+            <h1 class="h1">¡CARUMBA!</h1>
         </div>
     </div>
-</div>
+    <div class="features wf-section">
+        <div class="container cc-center">
+            <div class="h2-container cc-center">
+                <h2 class="h2 cc-center">
+                    {{ page.title }}
+                </h2>
+                <p class="paragraph">
+                    {% for block in page.body %}
+                        {% if block.block_type == 'gig' %}
+                            <table class="gig">
+                                <tr>
+                                    <td>
+                                        <div class="calendar">
+                                            <small>
+                                                {{ block.value.date|date:"l" }}
+                                            </small>
+                                            {{ block.value.date|date:"j" }}
+                                            <em>
+                                                {{ block.value.date|date:"F" }}
+                                            </em>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {% if block.value.private %}
+                                            <h3 class="private">Private party</h3>
+                                        {% else %}
+                                            <h3>{{ block.value.title }}</h3>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+
+                            </table>
+                        {% else %}
+                            <h2 class="h2 cc-center">
+                                {% include_block block %}
+                            </h2>
+                        {% endif %}
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
